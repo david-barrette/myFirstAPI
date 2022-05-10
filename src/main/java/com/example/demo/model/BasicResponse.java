@@ -5,12 +5,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class BasicResponse {
     @JsonProperty
-    private String message;
-    @JsonProperty
     private String timestamp;
+    @JsonProperty
+    private String message;
 
     public BasicResponse(){
-        this("This is a placeholder String!!!");
+        this("This is a placeholder String!!! Try putting '/hello?name=<your name>' in the URL!");
     }
     public BasicResponse(String message){
         this.message = message;
