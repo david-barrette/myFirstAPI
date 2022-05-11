@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import com.example.demo.model.constants.messageList;
 import com.example.demo.util.TimeUtil;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -10,7 +11,7 @@ public class BasicResponse {
     private String message;
 
     public BasicResponse(){
-        this("This is a placeholder String!!! Try putting '/hello?name=<your name>' in the URL!");
+        this(messageList.Messages.DEFAULT_MESSAGE.toString());
     }
     public BasicResponse(String message){
         this.message = message;
